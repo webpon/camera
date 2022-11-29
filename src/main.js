@@ -1,4 +1,12 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 
-createApp(App).mount('#app')
+import { Image as VanImage } from 'vant';
+// 2. 引入组件样式
+import 'vant/lib/index.css';
+
+const app = createApp(App);
+app.use(VanImage);
+
+
+app.mount('#app')
